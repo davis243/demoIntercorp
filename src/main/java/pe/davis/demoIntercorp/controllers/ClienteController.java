@@ -77,10 +77,10 @@ public class ClienteController {
 	
 	@ApiOperation(value = "Lista clientes + fecha Probable de muerte", response = ResponseEntity.class)
 	@ApiResponses(value = {
-			  @ApiResponse(code = 200, message = "Se creo cliente satisfactoriamente"),
+			  @ApiResponse(code = 200, message = "Se listo cliente satisfactoriamente"),
 			  @ApiResponse(code = 401, message = "No estas autorizado para ver este recurso"),
 			  @ApiResponse(code = 403, message = "Acceso prohibido a este recurso"),
-			  @ApiResponse(code = 404, message = "Un recurso para poder crear el cliente no fue encontrado"),
+			  @ApiResponse(code = 404, message = "Un recurso para poder listar el cliente no fue encontrado"),
 			  @ApiResponse(code = 500, message = "Error inesperado. Reintente en unos momentos")
 	})
 	@GetMapping("/listacliente")
